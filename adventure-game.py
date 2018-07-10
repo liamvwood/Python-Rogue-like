@@ -20,10 +20,11 @@ def createClass(role, name):
 
 def chooseClass(name):
     roles = ['Mage','Warrior','Archer' ]
-    for role in roles:
-        choice = input("Is " + name + " a " + role + "? (Y/N): ")
-        if choice == "Y":
-            return createClass(role, name)
+    while True:
+        for role in roles:
+            choice = input("Is " + name + " a " + role + "? (Y/N): ")
+            if choice == "Y":
+                return createClass(role, name)
 
 # Function calls
 main()

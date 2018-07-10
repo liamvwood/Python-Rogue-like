@@ -26,7 +26,6 @@ class Player:
     def healSelf(self,heal):
         self.health = self.health + heal
 
-
     # attk(i) / attk(s)
     def strengthAttack(self,roll, enemy):
         damageDealt = roll * self.strength
